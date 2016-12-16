@@ -1,2 +1,2 @@
 // let's go!
-alert('yeah!!')
+import React from 'react';
