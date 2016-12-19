@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 
 class App extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class App extends React.Component {
           
         </div>
           <Order />
-          <Inventory />
+          <Inventory/>
 
       </div>
       
@@ -17,4 +18,4 @@ class App extends React.Component {
   }
 }
 
-export default StorePicker;
+export default App;
