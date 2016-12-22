@@ -1,7 +1,14 @@
 import React from 'react';
 import { getFunName } from '../helpers';
 
+class StorePicker extends React.Component {
+  goToStore(event) {
+    event.preventDefault();
+    console.log('You changed the URL');
 
+    const value = $('input').val();
+
+  }
 
   render() {
     return (
