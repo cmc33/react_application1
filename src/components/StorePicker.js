@@ -6,7 +6,7 @@ class StorePicker extends React.Component {
     event.preventDefault();
     console.log('You changed the URL');
 
-    const value = $('input').val();
+    console.log(this.storeInput);
 
   }
 
