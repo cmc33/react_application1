@@ -1,9 +1,10 @@
 import React from 'react';
 
-class AddFishform extends React.Component {
+
+
   render() {
     return (
-        <form className="fish-edit">
+        <form className="fish-edit" onSubmit={(e) => this.createFish(e)}>
         <input type="text" placeholder="Fish Name" />
         <input type="text" placeholder="Fish Price" />
         <select>
