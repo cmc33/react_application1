@@ -6,6 +6,8 @@ import Order from './Order';
 class App extends React.Component {
   constructor() {
     super();
+
+    this.addFish = this.addFish.bind(this);
     this.state = {
       fishes: {},
       order: {}
@@ -17,8 +19,11 @@ class App extends React.Component {
     //update our state
     const fishes = {...this.state.fishes};
     //add in our new fish
-    //this.state.fishes.fish1 = fish;
+    const timestamp = Date.now();
+    fishes['fish-${timestamp}']
+    
     //set state
+    this.setState({ fishes });
   }
 
   render() {
