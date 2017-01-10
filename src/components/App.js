@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Inventory from './Inventory';
 import Order from './Order';
+import sampleFishes from '../sample-fishes';
 
 class App extends React.Component {
   constructor() {
@@ -24,6 +25,12 @@ class App extends React.Component {
     
     //set state
     this.setState({ fishes });
+  }
+
+  loadSamples() {
+    this.setState({
+      fishes:
+    });
   }
 
   render() {
