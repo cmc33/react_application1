@@ -13,6 +13,14 @@ class App extends React.Component {
     };
   }
 
+  addFish(fish) {
+    //update our state
+    const fishes = {...this.state.fishes};
+    //add in our new fish
+    //this.state.fishes.fish1 = fish;
+    //set state
+  }
+
   render() {
     return (
       <div className="catch-of-the-day">
