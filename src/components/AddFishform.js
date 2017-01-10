@@ -5,12 +5,13 @@ class AddFishform extends React.Component {
     event.preventDefault();
     console.log('Gonna make some fish!');
     const fish = {
-      name
-      price
-      status
-      desc
-      image
+      name: this.name.value,
+      price: this.price.value,
+      status: this.status.value,
+      desc: this.desc.value,
+      image: this.image.value,
     }
+    
   }
 
   render() {
