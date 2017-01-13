@@ -9,6 +9,8 @@ class App extends React.Component {
     super();
 
     this.addFish = this.addFish.bind(this);
+    this.loadSamples = this.loadSamples.bind(this);
+    //getinitialstate
     this.state = {
       fishes: {},
       order: {}
@@ -29,7 +31,7 @@ class App extends React.Component {
 
   loadSamples() {
     this.setState({
-      fishes:
+      fishes: sampleFishes
     });
   }
 
@@ -41,7 +43,7 @@ class App extends React.Component {
           
         </div>
           <Order />
-          <Inventory addFish={this.addFish} />
+          <Inventory addFish={this.addFish} loadSamples={this.loadSamples} />
 
       </div>
       
