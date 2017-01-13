@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Inventory from './Inventory';
+import Fish from './Fish';
 import Order from './Order';
 import sampleFishes from '../sample-fishes';
 
@@ -41,8 +42,7 @@ class App extends React.Component {
         <div className="menu">
           <Header tagline="Fresh Seafood Market"/>
           <ul className="list-of-fishes">
-          <li>
-          </li>
+          <Fish />
           </ul>
         </div>
           <Order />
