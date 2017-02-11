@@ -2,6 +2,9 @@ import React from 'react';
 import { formatPrice } from '../helpers';
 
 class Order extends React.Component {
+  constructor() {
+    super();
+  }
   renderOrder(key) {
     const fish = this.props.fishes[key];
     const count = this.props.order[key];
@@ -11,6 +14,7 @@ class Order extends React.Component {
     return (
       <li key={key}>
         <span>{count}lbs {fish.name}</span>
+        <span className="price">{formatPrice(count * fish.price)}</span>
       </li>
     )
   }
